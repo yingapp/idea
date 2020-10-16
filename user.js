@@ -263,7 +263,7 @@ window.worker.postMessage({
                 },
             },
             spread: {/**广播意图**/
-                ying: {/**共享给ying，替他人可以搜索到**/
+                ying: {/**共享给ying，他人可以搜索到**/
                     code: 'dvlldpddgldfp120dfvcs0sklc',/**校对口令，不同用户的区别**/
                     template: {
                         data: {
