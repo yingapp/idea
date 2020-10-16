@@ -301,8 +301,8 @@ window.worker.postMessage({
                                 }
                             },
                             李四: {/**用户之间的数据广播**/
-                                code: 'sasfsdfpv',/**和张山相同**/
-                                password: 'sadsdfomd01312dsnkssddfretrttrg',/**和张山相同，只有code和password相同的用户之间才能传播数据**/
+                                code: 'sasfsdfpv',/**和李四相同**/
+                                password: 'sadsdfomd01312dsnkssddfretrttrg',/**和李四相同，只有code和password相同的用户之间才能传播数据**/
                                 template: {
                                     data: {/**传出处理**/
                                         transform: {
