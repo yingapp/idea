@@ -15,7 +15,7 @@
 对话框中输入'/',浏览到需要修改的目录后，输入字段值，回车。  
 
 ### 清除并修改全部
-对话框输入'//'后回车，再输入xtml回车，然后输入用户信息 [user.js](https://github.com/yingapp/idea/blob/main/user.js)。
+确保在根目录，输入'//'后回车，再输入xtml回车，然后输入用户信息 [user.js](https://github.com/yingapp/idea/blob/main/user.js)。
     
 ## 搜索
 确保在根目录，输入'//'后回车，再输入关键词搜索  
