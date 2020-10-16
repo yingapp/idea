@@ -15,4 +15,4 @@
  |- spread    广播设置
 
 
-
+意图（包含数据和应用的集合），参考[sound](https://github.com/yingapp/sound)
