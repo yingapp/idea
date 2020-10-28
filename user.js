@@ -13,7 +13,7 @@ window.worker.postMessage({
                 manner: {
                     avatar: '',/**小图标，可以在对话框中按'/'后，浏览到对应目录，如/profile（用户)后，输入/avatar后，选文件修改，以下类似**/
                     bigavatar: '',/**大图标**/
-                    tthemes: {/**主题**/
+                    themes: {/**主题**/
                         light: {
                             bar: {
                                 backgroundColor: 'transparent',
