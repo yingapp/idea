@@ -2,7 +2,7 @@ window.worker.postMessage({
     clearUsers: {
         张山: {
             _setting: {
-                relayBase: 'http://yingrelay.herokuapp.com',/**中继torrent文件，https://github.com/yingapp/relay **/
+                relayBase: 'http://yingrelay.herokuapp.com',/**中继torrent文件，见 https://github.com/yingapp/relay **/
                 guard: true,/**有密码保护 **/
             },
             profile: {/**用户**/
