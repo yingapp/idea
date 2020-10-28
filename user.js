@@ -3,6 +3,7 @@ window.worker.postMessage({
         张山: {
             _setting: {
                 relayBase: 'http://yingrelay.herokuapp.com',/**中继torrent文件，https://github.com/yingapp/relay **/
+                guard: true,/**有密码保护 **/
             },
             profile: {/**用户**/
                 name: '张山',
@@ -133,10 +134,12 @@ window.worker.postMessage({
                 birthyear: '年龄',
             },
             intents: {/**意图，包含数据和应用的集合**/
-                聊天: {
+                _chat: {/** 内置对话意图 **/
+                    id: 'chat',
                     apps: {
-                        聊天: {
-                            url: 'https://yingview.herokuapp.com#/bot/chat',
+                        botChat: {
+                            url: 'https://yingview.herokuapp.com',
+                            aid: 'chat',
                             template: {
                                 data: {
                                     extract: {
@@ -150,6 +153,28 @@ window.worker.postMessage({
                                 }
                             },
                             nest: 'chat',
+                        }
+                    }
+                },
+                _page: {/** 内置用户意图 **/
+                    id: '_page',
+                    apps: {
+                        userPage: {
+                            url: 'https://yingview.herokuapp.com',
+                            aid: 'page',
+                            template: {
+                                data: {
+                                    extract: {
+                                        '*': true,
+                                    }
+                                },
+                                message: {
+                                    extract: {
+                                        '*': true
+                                    }
+                                }
+                            },
+                            nest: 'stage',
                         }
                     }
                 },
@@ -267,7 +292,7 @@ window.worker.postMessage({
                     code: 'dvlldpddgldfp120dfvcs0sklc',/**校对口令，不同用户的区别**/
                     template: {
                         data: {
-                            extract: {/**过滤，https://github.com/liip/fanci **/
+                            extract: {/**过滤，见 https://github.com/liip/fanci **/
                                 intents: {
                                     _view: {
                                         '*': true
