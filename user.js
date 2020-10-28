@@ -334,7 +334,7 @@ window.worker.postMessage({
                                             intents: {
                                                 xun: {
                                                     data: {
-                                                        steps: 'intents.策划.data.尉武.send'
+                                                        steps: 'intents.策划.data.李四.send'
                                                     }
                                                 },
                                             }
@@ -343,7 +343,7 @@ window.worker.postMessage({
                                     message: {/**传入处理**/
                                         transform: {
                                             spread: {
-                                                尉武: {
+                                                李四: {
                                                     data: {
                                                         intents: 'intents',
                                                         profile: 'profile'
