@@ -186,7 +186,7 @@ window.worker.postMessage({
                     },
                     apps: {
                         '声音': {
-                            url: 'https://yingapps.herokuapp.com/sound/index.html',/**可以通过对话框输入单个js文件或zip文件，进一步通过torrent共享**/
+                            url: 'https://yingapps.herokuapp.com/sound/index.html',/**可以通过对话框输入单个js或html文件，进一步通过torrent共享**/
                             aid: 'shengyin',
                             template: {
                                 data: {
